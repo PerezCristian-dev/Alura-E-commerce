@@ -1,0 +1,149 @@
+.form__section{
+
+    padding: 2rem 10rem;
+    background: #EAF2FD;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario{
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.input-label{
+    display: none;
+}
+
+.form__links li{
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.logo__form{
+    margin-top: 1.5rem;
+    align-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.input{
+    width: 35rem;
+    padding: .7rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: #C8C8C8 solid 1px;
+}
+
+#message{
+    height: 5rem;
+}
+.input-message-error{
+    display: none;
+}
+.button{
+    background: #2A7AE4;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+}
+
+.container__form{ display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.form__label{
+    color: #464646;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:1000px){
+    .form__section{
+
+        padding: 1rem 1rem;
+        justify-content: space-around;
+ 
+    }
+
+    .container__form{
+        flex-direction: column;
+        width: 30%;
+    }
+    .form__links li{
+        line-height: 45px;
+    
+    }
+
+    .logo__form{
+        margin-top: 1rem;
+    }
+
+    .button{
+
+        padding: .8rem 1.5rem;
+    }
+
+    .formulario{
+        line-height: 40px;
+        width: 50%;
+    
+    }
+
+    .input{
+     
+        height: 1.5rem;
+        margin-bottom: .8rem;
+        width: 22rem;
+
+    }
+    
+    #message{
+        height: 3rem;
+    }
+
+    .logo__form{
+        display: flex;
+        margin: 1rem 0rem;
+        padding:  0 .5rem;
+ 
+    }
+    
+}
+ 
+@media only screen and (max-width: 780px){
+
+    .form__section{
+        flex-direction: column;
+    }
+
+    .container__form{
+        text-align: center;
+        align-content: center;
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .input{
+     
+        width: 100%;
+       
+
+    }
+    .logo__form{
+        
+        justify-content: center;
+    }
+
+    .formulario{
+        line-height: 40px;
+        width: 85%;
+        padding: 1rem;
+        justify-self: center;
+    
+    }
+}

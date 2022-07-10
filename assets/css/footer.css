@@ -1,0 +1,13 @@
+.thefooter{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.social_img{
+    height: 30px;
+    margin: .5rem .3rem;
+    filter: invert(41%) sepia(98%) saturate(1884%) hue-rotate(198deg) brightness(90%) contrast(99%);
+}

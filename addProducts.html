@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Admin</title>
+    <link rel="icon" href="assets/img/Vector.svg" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/AddProduct/normalize.css">
+    <link rel="stylesheet" href="assets/css/AddProduct/reset.css">
+    <link rel="stylesheet" href="assets/css/AddProduct/style.css">
+    <link rel="stylesheet" href="assets/css/AddProduct/header.css">
+    <link rel="stylesheet" href="assets/css/AddProduct/login.css">
+    <link rel="stylesheet" href="assets/css/AddProduct/form.css">
+    <link rel="stylesheet" href="assets/css/AddProduct/footer.css">
+</head>
+<body>
+    <header class="theHead">
+        <div class="theLogo">
+            <div class="logo__section">
+                <a class="logo__section" href="index.html">
+                <img src="assets/img/Vector.svg" alt="AluraGeek_logo" class="header__logo__main">
+                <img src="assets/img/AluraGeek-1.svg" alt="AluraGeek_logo" class="header__logo">
+                <img src="assets/img/AluraGeek.svg" alt="AluraGeek_logo" class="header__logo">
+                </a>
+            </div>
+            <div class="header__btns">
+                <input type="text" class="search__bar" placeholder="¿Qué deseas buscar?">
+                <a href="products.html" class="login__btn">Menú Administrador</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        </section>
+        <section class="addProduct__section">
+            <form action="" class="formulario-addproducts flex flex--column">
+                <fieldset class="">
+                    <legend class="add__form__label">Agregar nuevo producto</legend>
+                    <div class="input-container">
+                        <input name="url" id="url" class="input" type="text" placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAA.png" required data-tipo="url">
+                        <label class="input-label" for="url">URL de imagen</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="Categoria" id="Categoria" class="input" type="text" placeholder="Consolas" required data-tipo="categoria">
+                        <label class="input-label" for="Categoria">URL de imagen</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="producto" id="product" class="input" type="text" placeholder="Producto XYZ" required data-tipo="producto">
+                        <label class="input-label" for="producto">Nombre del producto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="precio_producto" id="product" class="input" type="text" placeholder="$ 60.00" required data-tipo="precio_producto">
+                        <label class="input-label" for="precio_producto">Precio del producto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="desc-input-container">
+                        <input name="descripcion_producto" id="product" class="input input-description" type="text" placeholder="Descripción del producto" required data-tipo="precio_producto">
+                        <label class="input-label" for="descripcion_producto">Descripción del producto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <button class="button__login">Agregar producto</a>
+            </form>
+        </section>
+        <section class="form__section">
+            <div class="container__form">
+                <div class="logo__form">
+                    <a class="logo__form" href="index.html">
+                        <img src="assets/img/Vector.svg" alt="AluraGeek_logo" class="header__logo__main">
+                        <img src="assets/img/AluraGeek-1.svg" alt="AluraGeek_logo" class="header__logo">
+                        <img src="assets/img/AluraGeek.svg" alt="AluraGeek_logo" class="header__logo">
+                    </a>
+                </div>
+                <ul class="form__links">
+                    <li>Quienes somos</li>
+                    <li>Política de privacidad</li>
+                    <li>Programa de fidelidad</li>
+                    <li>Nuestras Tiendas</li>
+                    <li>Quiero ser franquiciado</li>
+                    <li>Anúncie aquí</li>
+                </ul>
+            </div>
+             <form action="#" class="formulario flex flex--column">
+                <fieldset>
+                    <legend class="form__label">Hable con nosotros</legend>
+                    <div class="input-container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
+                        <label class="input-label" for="name">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="message" id="message" class="input" type="text" placeholder="Escribe tu mensaje" required data-tipo="email">
+                        <label class="input-label" for="email">Email</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <button class="button">Enviar mensaje</a>
+            </form>
+        </section>
+    </main>
+    <footer class="thefooter">
+        <p>Created by Christheadvenger &copy 2022</p>
+        <div class="footer_icons">
+            <a href="https://www.linkedin.com/in/cristian-perez-425ab2237/" target="_blank"class="social__links"><img src="assets/img/linkIn_icon.png" alt="" class="social_img">
+            <a href="https://github.com/PerezCristian-dev/PerezCristian" target="_blank" class="social__links"><img src="assets/img/github.png" alt="" class="social_img"></a>
+            <a href="https://www.youtube.com/channel/UC3lZL3S2a2w4rKWSkp7Lopg" target="_blank" class="social__links"><img src="assets/img/youtube_icon.png" alt="" class="social_img"></a>
+            <a href="https://www.instagram.com/cristian.r.perez3/" target="_blank" class="social__links"><img src="assets/img/instagram_icon.png" alt="" class="social_img"></a>
+            <a href="https://www.facebook.com/cristian.r.perez3/" target="_blank" class="social__links"><img src="assets/img/facebook_icon.png" alt="" class="social_img"></a>
+        </div>
+    </footer>
+</body>
+</html>
