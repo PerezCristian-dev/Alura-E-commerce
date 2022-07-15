@@ -7,6 +7,7 @@
     <title>AluraGeek | Login</title>
     <link rel="icon" href="assets/img/Vector.svg" type="image/icon type">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../E-commerce/assets/css/alert.css">
     <link rel="stylesheet" href="assets/css/login/normalize.css">
     <link rel="stylesheet" href="assets/css/login/reset.css">
     <link rel="stylesheet" href="assets/css/login/style.css">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/login/login.css">
     <link rel="stylesheet" href="assets/css/login/form.css">
     <link rel="stylesheet" href="assets/css/login/footer.css">
+    <link rel="stylesheet" href="assets/css/Login/register.css">
 </head>
 <body>
     <header class="theHead">
@@ -37,17 +39,17 @@
                 <fieldset>
                     <legend class="login__form__label">Iniciar Sesión</legend>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Escriba su correo electrónico" required data-tipo="email">
+                        <input name="email" id="email" class="input" type="email" placeholder="Escriba su correo electrónico" required data-tipo="email" data-user>
                         <label class="input-label" for="email">Email</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="password" id="password" class="input" type="password" placeholder="Escriba su contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
+                        <input name="password" id="password" class="input" type="password" placeholder="Escriba su contraseña" autocomplete="currentPassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password" data-userpassword>
                         <label class="input-label" for="password">Contraseña</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                 </fieldset>
-                <button class="button__login" onClick="window.location='products.html'">Entrar</a>
+                <button class="button__login" data-loginBtn>Entrar</a>
             </form>
         </section>
         <section class="form__section">
@@ -95,7 +97,7 @@
             <a href="https://www.instagram.com/cristian.r.perez3/" target="_blank" class="social__links"><img src="assets/img/instagram_icon.png" alt="" class="social_img"></a>
             <a href="https://www.facebook.com/cristian.r.perez3/" target="_blank" class="social__links"><img src="assets/img/facebook_icon.png" alt="" class="social_img"></a>
         </div>
-        
+        <script src="js/login.js" type="module"></script>
     </footer>
 </body>
 </html>

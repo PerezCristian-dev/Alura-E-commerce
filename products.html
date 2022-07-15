@@ -39,7 +39,7 @@
                         <a class="add__product__btn" href="addProducts.html">Agregar producto</a>
                     </div>
                 </div>
-                <div class="product__cards">
+                <div class="product__cards" data-productsContainer>
                     <div class="product">
                         <img src="assets/img/prod1.png" alt="product image" class="product__img">
                         <h2 class="product__name">Product XYZ</h2>
@@ -100,11 +100,6 @@
                             <img src="assets/img/edit.svg" alt="edition__icon" class="edition__icon">
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="product__container">
-                <div class="product__cards">
                     <div class="product">
                         <img src="assets/img/prod7.png" alt="product image" class="product__img">
                         <h2 class="product__name">Product XYZ</h2>
@@ -165,16 +160,11 @@
                             <img src="assets/img/edit.svg" alt="edition__icon" class="edition__icon">
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="product__container">
-                <div class="product__cards">
                     <div class="product">
                         <img src="assets/img/prod12.png" alt="product image" class="product__img">
                         <h2 class="product__name">Product XYZ</h2>
                         <p class="product__price">$ 60.00</p>
-                                                <a href="#" class="product__id"> #1111111</a>
+                        <a href="#" class="product__id"> #1111111</a>
                         <div class="delete__edit__icon">
                             <img src="assets/img/delete.svg" alt="edition__icon" class="edition__icon">
                             <img src="assets/img/edit.svg" alt="edition__icon" class="edition__icon">
@@ -232,7 +222,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="form__section">
             <div class="container__form">
@@ -281,5 +270,7 @@
         </div>
         
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/addProducts.js" type="module"></script>
 </body>
 </html>

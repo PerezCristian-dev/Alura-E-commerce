@@ -22,7 +22,6 @@
     margin-bottom: 16px; 
     font-weight: 700;
 }
-
 .seeAll{
     display: flex;
     justify-content: space-between;
@@ -40,7 +39,6 @@
     justify-content: space-between;
     line-height: 30px;
 }
-
 
 .product__img{
     width: 11em;
@@ -62,6 +60,7 @@
     font-weight: 700;
     font-size: 16px;
 }
+
 
 @media only screen and (max-width:1000px){
 

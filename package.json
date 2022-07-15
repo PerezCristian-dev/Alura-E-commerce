@@ -1,0 +1,23 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PerezCristian-dev/Alura-Ecommerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PerezCristian-dev/Alura-Ecommerce/issues"
+  },
+  "homepage": "https://github.com/PerezCristian-dev/Alura-Ecommerce#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

@@ -27,10 +27,14 @@
 }
 .banner__btn{
     width: 10%;
+    text-decoration: none;
+    color:#FFFFFF;
+    font-weight: 700;
     padding: 1.2rem .5rem;
     text-align: center;
     background: #2A7AE4;
     cursor: pointer;
+    
 }
 
 @media only screen and (max-width:1000px) {

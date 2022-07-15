@@ -14,23 +14,17 @@
     width: 75%;
 }
 .form__section{
-
     padding: 2rem 10rem;
     background: #EAF2FD;
     display: flex;
     justify-content: space-between;
 }
-
 .formulario{
     line-height: 50px;
     font-weight: 500;
     font-size: 16px;
     width: 40rem;
 }
-.input-label{
-    display: none;
-}
-
 .form__links li{
     line-height: 50px;
     font-weight: 500;
@@ -42,19 +36,6 @@
     align-items: center;
     text-decoration: none;
 }
-
-.input{
-    width: 95%;
-    padding: .7rem 1rem;
-    height: 2.5rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-bottom: #C8C8C8 solid 1px;
-}
-
-#message{
-    height: 5rem;
-}
 .input-message-error{
     display: none;
 }
@@ -64,41 +45,95 @@
     color: white;
     text-align: center;
     padding: 1.5rem 1.5rem;
-
 }
-
 .container__form{ display: flex;
     justify-content: space-between;
     width: 40%;
 }
-.input__container{
-   
-    height: 50px;
-
+.input-container{
+   display: flex;
+   flex-direction: column;
+   background: white;
+   padding: .5rem .5rem;
+   margin-bottom: 1rem;
+   border-bottom: #C8C8C8 solid 1px;
+   border-radius: 30px;
+   width: 82vw;
 }
 .form__label{
     color: #464646;
     font-weight: 700;
     font-size: 16px;
 }
-
-
-.desc-input-container{
-    height: 100%;
-}
-
-.input-description{
-    height: 5rem;
-
-}
-.button__login{
-    width: 100%;
+.formulario-addproducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+    margin: 0;
 }
 .add__form__label{
     color:#464646;
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: .8rem;
+}
+.file__field{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 6vh;
+}
+#url{
+    width: 90%;
+}
+.uploader__icon {
+    background: url(/Desafios/E-commerce/assets/img/uploadFile.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20%;
+}
+.input-label{
+    display: none;
+}
+.input__addproduct{
+    height: 5vh;
+    border: none;
+    padding: .2rem 1rem;
+    background: none;
+}
+.label__addproduct{
+    position: relative;
+    top:15px;
+    left:10px;
+    color: #464646;
+    transition: .5s;
+}
+.input__addproduct::placeholder{
+    color: #2A7AE4;
+    transition: .2s;
+    opacity: .8;
+    background: none;
+}
+.input__addproduct:focus{
+    outline: 0;
+    background: transparent;
+}
+.input__addproduct:focus::placeholder{
+    color: transparent;
+    background: none;
+}
+.thelabel{
+    position: relative;
+    top:5px;
+    left:10px;
+    color: #464646;
+}
+.button__login{
+    border-radius: 40px;
+    font-weight: 600;
 }
 
 @media only screen and (max-width:1000px){

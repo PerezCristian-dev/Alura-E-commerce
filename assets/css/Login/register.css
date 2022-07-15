@@ -1,0 +1,8 @@
+.button__loginRegistrar {
+    width: 100%;
+    background: #2A7AE4;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+}

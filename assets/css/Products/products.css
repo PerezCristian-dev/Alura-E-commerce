@@ -41,8 +41,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     line-height: 30px;
+   
 }
-
+.product{
+   width: 16rem;
+    margin: 5px;
+}
 
 .product__img{
     width: 100%;
@@ -71,7 +75,7 @@
     justify-content: end;
     margin: 0;
     padding: 0;
-    top: -92%;
+    top: -85%;
 }
 .add__product__btn{
     width: 20%;

@@ -1,0 +1,34 @@
+{
+    "Star-Wars": [
+      {
+        "name": "Star Wars Head",
+        "price": "60",
+        "image": "assets/img/prod2.png",
+        "description": "A detailed and almost life-sized head of the iconic Imperial Stormtrooper. Enjoy great sound and great times with the Star Wars Stormtrooper Bluetooth speaker. With light up eyes and awesome sound. This is the speaker you're looking for.",
+        "id": 1
+      },
+      {
+        "name": "XBOX Series X",
+        "price": "60",
+        "image": "https://s3-alpha-sig.figma.com/img/100b/e5cb/f8a0cc589b7af608f23bcd20106f6fa3?Expires=1658102400&Signature=G90weOXRHjPUP1RzHU2DEg~8PHj9JQDtJq7g4LwAUVq5cKIKgS9PgVlPqXlVhIPqDiSaTHSN5IK55QthgwU2JnZAyhK-W9uARKixAZIL9Q9FLk1kFxRE1P9Q-NGCtrTDSK6PJG7ZqDtauKyaA66ESFC29ppxVyTWp7lOHTj~fkjjBCxXr9VvOCRix4WYxSVX~Srjsv~0~Nxs3jQA6VDp2AfgELjPG9QG1JLkvRYINC055TxeEfDrSx9RMce4zwgU7dYq1SFkzX9Hti4Lk9cgwtBJmXEp73CWdOobWMeS6lmRH-PXY2RhijsC4jq-O57vBhiQAR5NjsuY8XULH6XU4A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "description": "A detailed and almost life-sized head of the iconic Imperial Stormtrooper. Enjoy great sound and great times with the Star Wars Stormtrooper Bluetooth speaker. With light up eyes and awesome sound. This is the speaker you're looking for.",
+        "id": 1
+      }
+    ],
+    "Consolas": [
+        {
+          "name": "Star Wars Head",
+          "price": "60",
+          "image": "assets/img/prod2.png",
+          "description": "A detailed and almost life-sized head of the iconic Imperial Stormtrooper. Enjoy great sound and great times with the Star Wars Stormtrooper Bluetooth speaker. With light up eyes and awesome sound. This is the speaker you're looking for.",
+          "id": 1
+        },
+        {
+          "name": "XBOX Series X",
+          "price": "60",
+          "image": "https://s3-alpha-sig.figma.com/img/100b/e5cb/f8a0cc589b7af608f23bcd20106f6fa3?Expires=1658102400&Signature=G90weOXRHjPUP1RzHU2DEg~8PHj9JQDtJq7g4LwAUVq5cKIKgS9PgVlPqXlVhIPqDiSaTHSN5IK55QthgwU2JnZAyhK-W9uARKixAZIL9Q9FLk1kFxRE1P9Q-NGCtrTDSK6PJG7ZqDtauKyaA66ESFC29ppxVyTWp7lOHTj~fkjjBCxXr9VvOCRix4WYxSVX~Srjsv~0~Nxs3jQA6VDp2AfgELjPG9QG1JLkvRYINC055TxeEfDrSx9RMce4zwgU7dYq1SFkzX9Hti4Lk9cgwtBJmXEp73CWdOobWMeS6lmRH-PXY2RhijsC4jq-O57vBhiQAR5NjsuY8XULH6XU4A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "description": "A detailed and almost life-sized head of the iconic Imperial Stormtrooper. Enjoy great sound and great times with the Star Wars Stormtrooper Bluetooth speaker. With light up eyes and awesome sound. This is the speaker you're looking for.",
+          "id": 1
+        }
+      ]
+  }

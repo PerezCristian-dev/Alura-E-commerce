@@ -7,6 +7,7 @@
     <title>AluraGeek | Admin</title>
     <link rel="icon" href="assets/img/Vector.svg" type="image/icon type">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../E-commerce/assets/css/alert.css">
     <link rel="stylesheet" href="assets/css/AddProduct/normalize.css">
     <link rel="stylesheet" href="assets/css/AddProduct/reset.css">
     <link rel="stylesheet" href="assets/css/AddProduct/style.css">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/AddProduct/login.css">
     <link rel="stylesheet" href="assets/css/AddProduct/form.css">
     <link rel="stylesheet" href="assets/css/AddProduct/footer.css">
+    <link rel="stylesheet" href="assets/css/uploader.css">
 </head>
 <body>
     <header class="theHead">
@@ -32,38 +34,38 @@
         </div>
     </header>
     <main>
-        </section>
         <section class="addProduct__section">
-            <form action="" class="formulario-addproducts flex flex--column">
-                <fieldset class="">
+            <form action="" class="formulario-addproducts flex flex--column" data-formularioProduct>
+                <fieldset>
                     <legend class="add__form__label">Agregar nuevo producto</legend>
                     <div class="input-container">
-                        <input name="url" id="url" class="input" type="text" placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAA.png" required data-tipo="url">
-                        <label class="input-label" for="url">URL de imagen</label>
+                        <label class="label__addproduct" for="url">URL de imagen</label>
+                        <input name="url" id="url" class="input__addproduct" type="text" placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAA.png" required data-tipo="url">
+                        <span class="input-message-error">Este campo no es valido</span>
+                        <div class="uploader__icon"></div>
+                    </div>
+                    <div class="input-container">
+                        <label class="label__addproduct" for="Categoria">Categoria del Producto</label>
+                        <input name="categoria" id="category" class="input__addproduct" type="text" placeholder="Consolas" required data-tipo="categoria" data-url>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="Categoria" id="Categoria" class="input" type="text" placeholder="Consolas" required data-tipo="categoria">
-                        <label class="input-label" for="Categoria">URL de imagen</label>
+                        <label class="label__addproduct" for="producto">Nombre del producto</label>
+                        <input name="producto" id="product" class="input__addproduct" type="text" placeholder="Producto XYZ" required data-tipo="producto" data-nombreProducto>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="producto" id="product" class="input" type="text" placeholder="Producto XYZ" required data-tipo="producto">
-                        <label class="input-label" for="producto">Nombre del producto</label>
+                        <label class="label__addproduct" for="precio_producto">Precio del producto</label>
+                        <input name="precio_producto" id="price" class="input__addproduct" type="text" placeholder="$ 60.00" required data-tipo="precio_producto" data-precioProducto>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                     <div class="input-container">
-                        <input name="precio_producto" id="product" class="input" type="text" placeholder="$ 60.00" required data-tipo="precio_producto">
-                        <label class="input-label" for="precio_producto">Precio del producto</label>
-                        <span class="input-message-error">Este campo no es valido</span>
-                    </div>
-                    <div class="desc-input-container">
-                        <input name="descripcion_producto" id="product" class="input input-description" type="text" placeholder="Descripción del producto" required data-tipo="precio_producto">
-                        <label class="input-label" for="descripcion_producto">Descripción del producto</label>
+                        <label class="label__addproduct" for="descripcion_producto">Descripción del producto</label>
+                        <input name="descripcion_producto" id="description" class="input__addproduct input-description" type="text" placeholder="Descripción del producto" required data-tipo="precio_producto" data-descProducto>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
                 </fieldset>
-                <button class="button__login">Agregar producto</a>
+                <button class="button__login" data-addProduct>Agregar producto</a>
             </form>
         </section>
         <section class="form__section">
@@ -112,5 +114,8 @@
             <a href="https://www.facebook.com/cristian.r.perez3/" target="_blank" class="social__links"><img src="assets/img/facebook_icon.png" alt="" class="social_img"></a>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="js/SaveProducts.js"></script>
+    <script type="module" src="js/uploader.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@
 
 @media only screen and (max-width:1000px) {
     .theHead{
-        padding: 1rem 1rem;
+        padding: 1rem 2rem;
         justify-content: space-between;
         align-items: center;
  
@@ -64,6 +64,7 @@
         width: 90%;
         display: flex;
         justify-content: space-between;
+        padding: 0;
     }
     .header__btns{
         display: flex;
@@ -95,19 +96,17 @@
 
 @media only screen and (max-width:780px) {
     .theHead{
-      
         display: flex;
-      
         justify-content: space-around;
-        padding: 3%
-      
+        padding: 0 0rem;
     }
-
  
     .header__logo{
-        height: .6rem;
+        height: 1rem;
     }
-
+    .header__logo__main{
+        height: 1.5rem;
+    }
     .theLogo{
         display: flex;
         justify-content: space-around;
