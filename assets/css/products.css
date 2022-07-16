@@ -61,6 +61,21 @@
     font-size: 16px;
 }
 
+.edit__Form{
+    position: absolute;
+}
+
+.productHide{
+    display: none;
+}
+
+.no__found{
+
+    text-align: center;
+    color: #2A7AE4;
+    font-weight: 700;
+    font-size: 3rem;
+}
 
 @media only screen and (max-width:1000px){
 

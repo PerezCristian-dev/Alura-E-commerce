@@ -52,10 +52,6 @@ class objectcategories {
 };
 
 
-
-
-console.log();
-
 //declaring variables to be use.
 const btnConsole = document.querySelector("banner__btn");
 const categories = document.querySelectorAll(".product__container");
@@ -115,8 +111,6 @@ Keys.forEach(key => {
         };
     };
 });
-
-
 
     function createProduct(name, price, category, url){
         const newproduct = new product (name, price, category, url);

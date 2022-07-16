@@ -16,7 +16,7 @@
     border: none;
     width: 50%;
     height: 3rem;
-    background-image: url(/Desafios/E-commerce/assets/img/loop.svg);
+    background-image: url(../../img/loop.svg);
     background-repeat: no-repeat;
     background-size: 3.8%;
     background-position:96%;
@@ -124,7 +124,7 @@
     .search__bar{
         border: none;
         background: none;
-        background-image: url(/Desafios/E-commerce/assets/img/loop.svg);
+        background-image: url(../../img/loop.svg);
         background-repeat: no-repeat;
         background-position: 70%;
         background-size: 80%;

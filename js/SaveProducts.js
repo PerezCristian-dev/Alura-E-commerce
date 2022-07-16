@@ -1,7 +1,7 @@
 //Importing Data from Server Scripts
-import { productServer } from './server/server.js';
+//import { productServer } from './server/server.js';
 import { createAlert } from './createAlerts.js';
-productServer.productbyCategory()
+/*productServer.productbyCategory()
 .then((response) => {
     response.forEach(data => {
     console.log(data.name);
@@ -9,12 +9,18 @@ productServer.productbyCategory()
     
 })
 .catch((error) => {});
+*/
+let dollarUS2 = Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    useGrouping: true,
+});
 
 //create products and add by click
 export class product {
     constructor (name, price, category, url){
         this.name = name;
-        this.price = price;
+        this.price = dollarUS2.format(price);
         this.id = uuid.v4().substr(0,8);
         this.url = url;
         this.category = category;
@@ -61,20 +67,36 @@ export class product {
 let closeUploader =  ()=>{
     const theUploader = document.querySelector(".alerta"); 
     theUploader.parentElement.removeChild(theUploader);
+    enableScroll();
 };
 
 const addBtn = document.querySelector("[data-addProduct]");
 addBtn.addEventListener ("click", (event)=>{
     event.preventDefault();
-    const name = document.getElementById("product").value;
-    const price = document.getElementById("price").value;
-    const categoria = document.getElementById("category").value;
-    const url = document.getElementById("url").value;
-    const description = document.getElementById("description").value;
+    const name = document.getElementById("product");
+    const price = document.getElementById("price");
+    const categoria = document.getElementById("category");
+    const url = document.getElementById("url");
+    const description = document.getElementById("description");
 
-    if(name == "" || price == "" || categoria == "" || url == ""){
+    if(name.value == "" || price.value == "" || categoria.value == "" || url.value == ""){
         const thebody = document.querySelector("main");
         const theAlert = createAlert("Oppss..", "Please complete all fields.","wrong","Continue", "Go to products");
+
+//adding span message on empty fields. 
+        const messageSpan = document.querySelectorAll (".input-message-error");
+        messageSpan.forEach (span =>{
+            span.classList.remove ("theSpanMessage");
+            if(span.parentNode.children[1].value == ""){
+                
+                span.classList.add ("theSpanMessage");
+            }
+        });
+
+        window.scrollTo(0, 0);
+        window.onscroll = function() {
+            window.scrollTo(0, 0);
+        };
         thebody.appendChild (theAlert);
         const btn1 = document.querySelector("[data-btn1]");
         btn1.addEventListener("click", closeUploader);
@@ -85,11 +107,12 @@ addBtn.addEventListener ("click", (event)=>{
         });
 
     }else{
-    const newproduct = new product (name, price, categoria, url);
+    const newproduct = new product (name.value, price.value, categoria.value, url.value);
     //const theproduct = newproduct.createProduct();
     const productComponents = newproduct;
     /*newproduct.addProduct(theproduct);*/
-    newproduct.saveItems(categoria, productComponents);
+
+   newproduct.saveItems(productComponents.category, productComponents);
     const form = document.querySelector("[data-formularioProduct]");
     form.reset();
     
@@ -110,6 +133,10 @@ inputs.forEach ((input)=>{
     });
 })
 
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
 
 /*const addBtn = document.querySelector("[data-addProduct]");
 addBtn.addEventListener ("click", (event)=>{

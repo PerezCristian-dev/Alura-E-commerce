@@ -7,14 +7,14 @@
     <title>AluraGeek | Admin</title>
     <link rel="icon" href="assets/img/Vector.svg" type="image/icon type">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../E-commerce/assets/css/alert.css">
-    <link rel="stylesheet" href="assets/css/AddProduct/normalize.css">
-    <link rel="stylesheet" href="assets/css/AddProduct/reset.css">
-    <link rel="stylesheet" href="assets/css/AddProduct/style.css">
-    <link rel="stylesheet" href="assets/css/AddProduct/header.css">
-    <link rel="stylesheet" href="assets/css/AddProduct/login.css">
-    <link rel="stylesheet" href="assets/css/AddProduct/form.css">
-    <link rel="stylesheet" href="assets/css/AddProduct/footer.css">
+    <link rel="stylesheet" href="assets/css/alert.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/addproduct/style.css">
+    <link rel="stylesheet" href="assets/css/addproduct/header.css">
+    <link rel="stylesheet" href="assets/css/addproduct/login.css">
+    <link rel="stylesheet" href="assets/css/addproduct/form.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/uploader.css">
 </head>
 <body>
@@ -41,43 +41,41 @@
                     <div class="input-container">
                         <label class="label__addproduct" for="url">URL de imagen</label>
                         <input name="url" id="url" class="input__addproduct" type="text" placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAA.png" required data-tipo="url">
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">| Este campo no es requerido</span>
                         <div class="uploader__icon"></div>
                     </div>
                     <div class="input-container">
                         <label class="label__addproduct" for="Categoria">Categoria del Producto</label>
                         <input name="categoria" id="category" class="input__addproduct" type="text" placeholder="Consolas" required data-tipo="categoria" data-url>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">| Este campo no es requerido</span>
                     </div>
                     <div class="input-container">
                         <label class="label__addproduct" for="producto">Nombre del producto</label>
                         <input name="producto" id="product" class="input__addproduct" type="text" placeholder="Producto XYZ" required data-tipo="producto" data-nombreProducto>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">| Este campo no es requerido</span>
                     </div>
                     <div class="input-container">
                         <label class="label__addproduct" for="precio_producto">Precio del producto</label>
                         <input name="precio_producto" id="price" class="input__addproduct" type="text" placeholder="$ 60.00" required data-tipo="precio_producto" data-precioProducto>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">| Este campo no es requerido</span>
                     </div>
                     <div class="input-container">
                         <label class="label__addproduct" for="descripcion_producto">Descripción del producto</label>
                         <input name="descripcion_producto" id="description" class="input__addproduct input-description" type="text" placeholder="Descripción del producto" required data-tipo="precio_producto" data-descProducto>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">| Este campo no es requerido</span>
                     </div>
                 </fieldset>
                 <button class="button__login" data-addProduct>Agregar producto</a>
             </form>
         </section>
-        <section class="form__section">
-            <div class="container__form">
-                <div class="logo__form">
-                    <a class="logo__form" href="index.html">
-                        <img src="assets/img/Vector.svg" alt="AluraGeek_logo" class="header__logo__main">
-                        <img src="assets/img/AluraGeek-1.svg" alt="AluraGeek_logo" class="header__logo">
-                        <img src="assets/img/AluraGeek.svg" alt="AluraGeek_logo" class="header__logo">
-                    </a>
+        <section class="footer__form__section">
+            <div class="footer__container__form">
+                <div class="footer__logo__form">
+                    <img src="assets/img/Vector.svg" alt="AluraGeek_logo" class="footer__header__logo__main">
+                    <img src="assets/img/AluraGeek-1.svg" alt="AluraGeek_logo" class="footer__header__logo">
+                    <img src="assets/img/AluraGeek.svg" alt="AluraGeek_logo" class="footer__header__logo">
                 </div>
-                <ul class="form__links">
+                <ul class="footer__form__links">
                     <li>Quienes somos</li>
                     <li>Política de privacidad</li>
                     <li>Programa de fidelidad</li>
@@ -86,21 +84,21 @@
                     <li>Anúncie aquí</li>
                 </ul>
             </div>
-             <form action="#" class="formulario flex flex--column">
+             <form action="./registro_concluido.html" class="footer__formulario">
                 <fieldset>
-                    <legend class="form__label">Hable con nosotros</legend>
-                    <div class="input-container">
-                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
-                        <label class="input-label" for="name">Nombre</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                    <legend class="footer__form__label">Hable con nosotros</legend>
+                    <div class="footer__input-container">
+                        <input name="name" id="name" class="footer__input" type="text" placeholder="Nombre"   minlegth="10" maxlength="40" required>
+                        <label class="footer__input-label" for="name">Nombre</label>
+                        <span class="footer__input-message-error">Este campo no es valido</span>
                     </div>
-                    <div class="input-container">
-                        <input name="message" id="message" class="input" type="text" placeholder="Escribe tu mensaje" required data-tipo="email">
-                        <label class="input-label" for="email">Email</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                    <div class="footer__input-container">
+                        <input name="message" id="message" class="footer__input" type="text" placeholder="Escribe tu mensaje" required data-tipo="email" minlegth="10" maxlength="120">
+                        <label class="footer__input-label" for="email">Email</label>
+                        <span class="footer__input-message-error">Este campo no es valido</span>
                     </div>
                 </fieldset>
-                <button class="button">Enviar mensaje</a>
+                <button class="footer__button">Enviar mensaje</a>
             </form>
         </section>
     </main>

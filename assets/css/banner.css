@@ -34,6 +34,7 @@
     text-align: center;
     background: #2A7AE4;
     cursor: pointer;
+    width: 8rem;
     
 }
 
@@ -73,9 +74,9 @@
         padding: 1rem 0rem;
         text-align: center;
         background: #2A7AE4;
-        font-size: 100%;
+        font-size: 1rem;
         font-weight: 550;
-        width: 20%;
+       
     }
     
 
@@ -116,8 +117,8 @@
     }
 
     .banner__btn{
-        width: 40%;
-        padding: .5rem 0rem;
+        width: 7rem;
+        padding: 1rem 1rem;
         text-align: center;
         background: #2A7AE4;
         font-size: .8rem;

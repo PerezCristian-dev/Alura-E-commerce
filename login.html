@@ -7,15 +7,14 @@
     <title>AluraGeek | Login</title>
     <link rel="icon" href="assets/img/Vector.svg" type="image/icon type">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../E-commerce/assets/css/alert.css">
-    <link rel="stylesheet" href="assets/css/login/normalize.css">
-    <link rel="stylesheet" href="assets/css/login/reset.css">
-    <link rel="stylesheet" href="assets/css/login/style.css">
-    <link rel="stylesheet" href="assets/css/login/header.css">
+    <link rel="stylesheet" href="assets/css/alert.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/login/login.css">
-    <link rel="stylesheet" href="assets/css/login/form.css">
-    <link rel="stylesheet" href="assets/css/login/footer.css">
     <link rel="stylesheet" href="assets/css/Login/register.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
     <header class="theHead">
@@ -36,32 +35,30 @@
         </section>
         <section class="login__section">
             <form action="./registro_concluido.html" class="formulario flex flex--column">
-                <fieldset>
+                <fieldset class = "login_field">
                     <legend class="login__form__label">Iniciar Sesión</legend>
                     <div class="input-container">
+                        <label class="input-label" for="email">User Name</label>
                         <input name="email" id="email" class="input" type="email" placeholder="Escriba su correo electrónico" required data-tipo="email" data-user>
-                        <label class="input-label" for="email">Email</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <span class="input-message-error">Este es requerido</span>
                     </div>
                     <div class="input-container">
-                        <input name="password" id="password" class="input" type="password" placeholder="Escriba su contraseña" autocomplete="currentPassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password" data-userpassword>
                         <label class="input-label" for="password">Contraseña</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                        <input name="password" id="password" class="input" type="password" placeholder="Escriba su contraseña" autocomplete="currentPassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password" data-userpassword>
+                        <span class="input-message-error">Este es requerido</span>
                     </div>
                 </fieldset>
-                <button class="button__login" data-loginBtn>Entrar</a>
+                <button class="button__login" data-loginbtn>Entrar</a>
             </form>
         </section>
-        <section class="form__section">
-            <div class="container__form">
-                <div class="logo__form">
-                    <a class="logo__form" href="index.html">
-                        <img src="assets/img/Vector.svg" alt="AluraGeek_logo" class="header__logo__main">
-                        <img src="assets/img/AluraGeek-1.svg" alt="AluraGeek_logo" class="header__logo">
-                        <img src="assets/img/AluraGeek.svg" alt="AluraGeek_logo" class="header__logo">
-                    </a>
+        <section class="footer__form__section">
+            <div class="footer__container__form">
+                <div class="footer__logo__form">
+                    <img src="assets/img/Vector.svg" alt="AluraGeek_logo" class="footer__header__logo__main">
+                    <img src="assets/img/AluraGeek-1.svg" alt="AluraGeek_logo" class="footer__header__logo">
+                    <img src="assets/img/AluraGeek.svg" alt="AluraGeek_logo" class="footer__header__logo">
                 </div>
-                <ul class="form__links">
+                <ul class="footer__form__links">
                     <li>Quienes somos</li>
                     <li>Política de privacidad</li>
                     <li>Programa de fidelidad</li>
@@ -70,21 +67,21 @@
                     <li>Anúncie aquí</li>
                 </ul>
             </div>
-             <form action="./registro_concluido.html" class="formulario flex flex--column">
+             <form action="./registro_concluido.html" class="footer__formulario">
                 <fieldset>
-                    <legend class="form__label">Hable con nosotros</legend>
-                    <div class="input-container">
-                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
-                        <label class="input-label" for="name">Nombre</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                    <legend class="footer__form__label">Hable con nosotros</legend>
+                    <div class="footer__input-container">
+                        <input name="name" id="name" class="footer__input" type="text" placeholder="Nombre"   minlegth="10" maxlength="40" required>
+                        <label class="footer__input-label" for="name">Nombre</label>
+                        <span class="footer__input-message-error">Este campo no es valido</span>
                     </div>
-                    <div class="input-container">
-                        <input name="message" id="message" class="input" type="text" placeholder="Escribe tu mensaje" required data-tipo="email">
-                        <label class="input-label" for="email">Email</label>
-                        <span class="input-message-error">Este campo no es valido</span>
+                    <div class="footer__input-container">
+                        <input name="message" id="message" class="footer__input" type="text" placeholder="Escribe tu mensaje" required data-tipo="email" minlegth="10" maxlength="120">
+                        <label class="footer__input-label" for="email">Email</label>
+                        <span class="footer__input-message-error">Este campo no es valido</span>
                     </div>
                 </fieldset>
-                <button class="button">Enviar mensaje</a>
+                <button class="footer__button">Enviar mensaje</a>
             </form>
         </section>
     </main>
@@ -97,7 +94,7 @@
             <a href="https://www.instagram.com/cristian.r.perez3/" target="_blank" class="social__links"><img src="assets/img/instagram_icon.png" alt="" class="social_img"></a>
             <a href="https://www.facebook.com/cristian.r.perez3/" target="_blank" class="social__links"><img src="assets/img/facebook_icon.png" alt="" class="social_img"></a>
         </div>
-        <script src="js/login.js" type="module"></script>
     </footer>
+    <script src="js/login.js" type="module"></script>
 </body>
 </html>

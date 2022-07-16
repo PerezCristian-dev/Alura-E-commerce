@@ -10,4 +10,166 @@
     height: 30px;
     margin: .5rem .3rem;
     filter: invert(41%) sepia(98%) saturate(1884%) hue-rotate(198deg) brightness(90%) contrast(99%);
+    text-decoration: none;
+}
+
+.social__links{
+    text-decoration: none;
+}
+
+.footer_icons{
+    text-decoration: none;
+}
+
+.footer__form__section{
+
+    padding: 2rem 10rem;
+    background: #EAF2FD;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__formulario{
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.footer__input-label{
+    display: none;
+}
+
+.footer__form__links li{
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.footer__logo__form{
+    margin-top: 1.5rem;
+    align-content: center;
+    align-items: center;
+}
+
+.footer__input{
+    width: 35rem;
+    padding: .7rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: #C8C8C8 solid 1px;
+}
+
+#message{
+    height: 5rem;
+}
+.footer__input-message-error{
+    display: none;
+}
+.footer__button{
+    background: #2A7AE4;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+}
+
+.footer__container__form{ display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.footer__form__label{
+    color: #464646;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.footer__input-container{
+    width: 50rem;
+}
+@media only screen and (max-width:1000px){
+    .footer__form__section{
+
+        padding: 1rem 1rem;
+        justify-content: space-around;
+ 
+    }
+
+    .footer__container__form{
+        flex-direction: column;
+        width: 30%;
+    }
+    .footer__form__links li{
+        line-height: 45px;
+    
+    }
+
+    .footer__logo__form{
+        margin-top: 1rem;
+    }
+
+    .footer__button{
+
+        padding: .8rem 1.5rem;
+    }
+
+    .footer__formulario{
+        line-height: 40px;
+        width: 50%;
+    
+    }
+
+    .footer__input{
+     
+        height: 1.5rem;
+        margin-bottom: .8rem;
+        width: 22rem;
+
+    }
+    
+    #message{
+        height: 3rem;
+    }
+
+    .footer__logo__form{
+        display: flex;
+        margin: 1rem 0rem;
+        padding:  0 .5rem;
+ 
+    }
+    
+}
+ 
+@media only screen and (max-width: 780px){
+
+    .footer__form__section{
+        flex-direction: column;
+    }
+
+    .footer__container__form{
+        text-align: center;
+        align-content: center;
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer__input{
+     
+        width: 100%;
+       
+
+    }
+    .footer__logo__form{
+        
+        justify-content: center;
+    }
+
+    .footer__formulario{
+        line-height: 40px;
+        width: 85%;
+        padding: 1rem;
+        justify-self: center;
+    
+    }
 }

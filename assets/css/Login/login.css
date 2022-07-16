@@ -1,8 +1,47 @@
 .login__section{
     display: flex;
     justify-content: center;
-    padding: 6rem 3rem;
+    padding: 6rem 0rem;
     background: #F5F5F5;
+}
+.login_field{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    margin: .5rem 0rem;
+}
+.input-label{
+    position: relative;
+    top: 25px;
+    left:15px;
+    color:transparent;
+}
+.input{
+    height: 4rem;
+    padding: 0rem 1rem;
+    border: none;
+    background-color: white; 
+    border-bottom: #C8C8C8 solid 1px ;
+}
+
+.input:focus{
+    outline: 2;
+    outline-color: #2A7AE4;
+    transition: .1s ease-in-out;
+}
+
+.input:focus::placeholder{
+    color: transparent;
+    transition: .4s;
+   
 }
 .login__form__label{
     text-align: center;
@@ -11,8 +50,6 @@
     font-size: 120%;
     letter-spacing: .1rem;
 }
-
-
 .seeAll{
     display: flex;
     justify-content: space-between;
@@ -23,14 +60,12 @@
     font-weight: 700;
     margin: .5rem;
 }
-
 .product__cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     line-height: 30px;
 }
-
 .button__login{
     width: 100%;
     background: #2A7AE4;
@@ -58,6 +93,29 @@
     color: #2a7ae4;
     font-weight: 700;
     font-size: 16px;
+}
+
+.input-message-error{
+    display: none;
+}
+
+.theSpanMessage{
+    display: unset;
+    color: red;
+    font-size: 0.7rem;
+    padding: .1rem 0.5rem;
+    
+}
+.theInputAnimation{
+    top: 1px;
+    left: -1px;
+    color: #F5F5F5;
+    background: #2A7AE4;
+    width: 6rem;
+    padding: .1rem .5rem;
+    transition: .5s;
+    font-weight: 700;
+    text-align: center;
 }
 
 @media only screen and (max-width:1000px){

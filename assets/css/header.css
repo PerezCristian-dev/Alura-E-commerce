@@ -2,7 +2,6 @@
 .theLogo{
     display: flex;
     justify-content: space-between;
-   
     align-items: center;
     padding: 2rem 3rem;
 }
@@ -19,12 +18,11 @@
     height: 3rem;
     background-image: url(../img/loop.svg);
     background-repeat: no-repeat;
-    background-size: 2.5%;
+    background-size: 1.3rem;
     background-position:96%;
     border-radius: 25px;
     background-color: #F5F5F5;
     padding: 0% 2%;
-
 }
 .search__bar::placeholder {
   
@@ -52,12 +50,11 @@
    
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1024px) {
     .theHead{
         padding: 1rem 2rem;
         justify-content: space-between;
         align-items: center;
- 
     }
 
     .theLogo{
@@ -81,6 +78,7 @@
     .search__bar{
         width: 100%;
         margin: 1rem;
+        background-size: 1.3rem;
     }
     .login__btn{
       
@@ -118,7 +116,7 @@
         background-image: url(../img/loop.svg);
         background-repeat: no-repeat;
         background-position: 70%;
-        background-size: 40%;
+        background-size: 1.3rem;
         width: 1rem;
     }
 
@@ -133,8 +131,7 @@
         font-size: 1rem;
         align-content: center;
         text-align: center;
-        width: 6rem;
-        
+        width: 6rem;   
     }
 
     .header__btns{

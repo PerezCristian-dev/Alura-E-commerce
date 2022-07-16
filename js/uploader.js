@@ -24,10 +24,13 @@ export function createUpload(title, message, boton1){
     return upload;
  };
 
-
  let uploadFiles = ()=>{
     let uploader = createUpload("Upload your file", "Drop files here or browse", "Upload");
     let location = document.querySelector("main");
+    window.scrollTo(0, 0);
+    window.onscroll = function() {
+        window.scrollTo(0, 0);
+    };
     location.appendChild(uploader);
  };
 
@@ -41,6 +44,8 @@ export function createUpload(title, message, boton1){
 let closeUploader =  ()=>{
     const theUploader = document.querySelector(".upload"); 
     theUploader.parentElement.removeChild(theUploader);
+    window.onscroll = function() {
+    };
 };
 
 

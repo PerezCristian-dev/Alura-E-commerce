@@ -17,7 +17,7 @@
     width: 45%;
     height: 3rem;
     font-size: 110%;
-    background-image: url(/Desafios/E-commerce/assets/img/loop.svg);
+    background-image: url(../../img/loop.svg);
     background-repeat: no-repeat;
     background-size: 3.8%;
     background-position:96%;
@@ -62,7 +62,7 @@
     .search__bar{
         border: none;
         background: none;
-        background-image: url(/Desafios/E-commerce/assets/img/loop.svg);
+        background-image: url(../../img/loop.svg);
         background-repeat: no-repeat;
         background-position: 95%;
         background-size: 6%;
@@ -123,7 +123,7 @@
     .search__bar{
         border: none;
         background: none;
-        background-image: url(/Desafios/E-commerce/assets/img/loop.svg);
+        background-image: url(../../img/loop.svg);
         background-repeat: no-repeat;
         background-position: 70%;
         background-size: 80%;

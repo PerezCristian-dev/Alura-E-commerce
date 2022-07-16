@@ -27,7 +27,20 @@ registrar.addEventListener("click",(event)=>{
 
     let email = document.querySelector("[data-userprovided]").value;
     let pass = document.querySelector("[data-userpasswordprovided]").value;
+    let theuser = email;
+    let thepassword = pass;
+    console.log(theuser);
 
+    if(theuser == "" || thepassword == ""){
+        const messageSpan = document.querySelectorAll (".input-message-error");
+        messageSpan.forEach (span =>{
+            console.log(span.parentNode.children[1]);
+            span.classList.remove ("theSpanMessage");
+            if(span.parentNode.children[1].value == ""){
+                span.classList.add ("theSpanMessage");
+            }
+        });
+    }else{
     if (email == "" || pass==""){
         const thebody = document.querySelector("main");
             const theAlert = createAlert ("Opss...", "All field most be filled", "wrong", "Continue", "Main Manu");
@@ -46,11 +59,7 @@ registrar.addEventListener("click",(event)=>{
 
     }else{
 
-
-        const user = document.querySelector ("[data-userprovided]");
-        const password = document.querySelector("[data-userpasswordprovided]");
-        const newuser = new theuser (user.value, password.value);  
-        newuser.saveUser(newuser);  
+        newuser ();
 
         const thebody = document.querySelector("main");
             const theAlert = createAlert ("Success", "Your user have been register successfully", "success", "Go to login", "Main Manu");
@@ -67,10 +76,29 @@ registrar.addEventListener("click",(event)=>{
                 theAlert.parentNode.removeChild(theAlert);
                 window.location.assign("products.html");
             });
-
+        }
     }
-
-
-
 });
 
+
+function newuser (){
+    const user = document.querySelector ("[data-userprovided]");
+    const password = document.querySelector("[data-userpasswordprovided]");
+    const newuser = new theuser (user.value, password.value);  
+    newuser.saveUser(newuser);  
+}
+
+const theInputs = document.querySelectorAll('.input');
+
+console.log(theInputs);
+theInputs.forEach (input =>{
+    const inputLabel = input.parentNode.children[0];
+   
+input.addEventListener ("focus", ()=>{
+    inputLabel.classList.add("theInputAnimation");
+});
+
+input.addEventListener ("blur", ()=>{
+    inputLabel.classList.remove("theInputAnimation");
+});
+});

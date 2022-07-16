@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
     height: 20vh;
-    background: url(/Desafios/E-commerce/assets/img/uploadFile.png);
+    background: url(../img/uploadFile.png);
     background-repeat: no-repeat;
     background-size: 38%;
     background-position: center;
@@ -119,4 +119,11 @@
     right: 30px;
     height: 4rem;
     background-size: 25%; 
+}
+
+@media only screen and (max-width:1000px) {
+    .upload__alert{
+        width: 75vw;
+        margin: 0;
+    }
 }
