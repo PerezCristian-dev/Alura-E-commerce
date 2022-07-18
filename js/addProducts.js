@@ -31,7 +31,6 @@ class product {
     saveItems(categoria, productComponents){
         const savedProducts = JSON.parse(sessionStorage.getItem(categoria))||[];
         savedProducts.push(productComponents);
-        console.log(savedProducts);
         sessionStorage.setItem (categoria, JSON.stringify(savedProducts));
     };
 };
@@ -81,7 +80,7 @@ class product {
 //Adding functionality to edit and delete buttons
 
 const editBtn = document.querySelectorAll(".edition__icon");
-console.log(editBtn);
+
 editBtn.forEach(btn =>{
     btn.addEventListener("click", (event)=>{
         const btnNames = event.target.src;

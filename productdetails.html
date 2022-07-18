@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek | Login</title>
+    <title>AluraGeek | Details</title>
     <link rel="icon" href="assets/img/Vector.svg" type="image/icon type">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/alert.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/login/login.css">
-    <link rel="stylesheet" href="assets/css/Login/register.css">
+    <link rel="stylesheet" href="assets/css/products/normalize.css">
+    <link rel="stylesheet" href="assets/css/products/reset.css">
+    <link rel="stylesheet" href="assets/css/products/style.css">
+    <link rel="stylesheet" href="assets/css/products/header.css">
+    <link rel="stylesheet" href="assets/css/seeproducts/seeproducts.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/search_bar.css">
 </head>
 <body>
     <header class="theHead">
@@ -31,26 +30,59 @@
             </div>
         </div>
     </header>
+
     <main>
-        </section>
-        <section class="login__section">
-            <form action="./registro_concluido.html" class="formulario flex flex--column">
-                <fieldset class = "login_field">
-                    <legend class="login__form__label">Iniciar Sesión</legend>
-                    <div class="input-container">
-                        <label class="input-label" for="email">User Name</label>
-                        <input name="email" id="email" class="input" type="email" placeholder="Escriba su correo electrónico" required data-tipo="email" data-user>
-                        <span class="input-message-error">Este es requerido</span>
+        <section class="product__section">
+            <div class="product__container">
+                <div class="product__information__details">
+                    <img src="assets/img/prod1.png" alt="product image" class="product__img__details__see">
+                    <div class="product__img__details">
+                        <h2 class="product__name__see">Star Wars Coffe Cup</h2>
+                        <p class="product__price__see">$ 60.00</p>
+                        <p href="#" class="product__details__see">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga voluptate facilis laborum possimus reiciendis excepturi ullam, illo est et molestiae ab tempora labore quis recusandae cum nostrum ratione distinctio eum.</p>
                     </div>
-                    <div class="input-container">
-                        <label class="input-label" for="password">Contraseña</label>
-                        <input name="password" id="password" class="input" type="password" placeholder="Escriba su contraseña" autocomplete="currentPassword" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password" data-userpassword>
-                        <span class="input-message-error">Este es requerido</span>
+                </div>
+                <div class="section__header">
+                    <h2 class="product__title">Productos similares</h2>
+                </div>
+                <div class="product__cards" data-productsContainer>
+                    
+                    <div class="product">
+                        <img src="assets/img/prod1.png" alt="product image" class="product__img">
+                        <h2 class="product__name">Star Wars Coffe Cup</h2>
+                        <p class="product__price">$ 60.00</p>
+                        <a href="#" class="product__id">Ver producto</a>
                     </div>
-                </fieldset>
-                <p class ="registro__question">¿No tienes una cuenta? <a class ="registro__link" href="register.html">Regristrate</a></p>
-                <button class="button__login" data-loginbtn>Entrar</a>
-            </form>
+                    <div class="product">
+                        <img src="assets/img/prod2.png" alt="product image" class="product__img">
+                        <h2 class="product__name">Pizaa Papeles SW</h2>
+                        <p class="product__price">$ 60.00</p>
+                        <a href="#" class="product__id">Ver producto</a>
+
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/prod3.png" alt="product image" class="product__img">
+                        <h2 class="product__name">Force B with you</h2>
+                        <p class="product__price">$ 60.00</p>
+                        <a href="#" class="product__id">Ver producto</a>
+
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/prod4.png" alt="product image" class="product__img">
+                        <h2 class="product__name">Star Wars Assassin</h2>
+                        <p class="product__price">$ 60.00</p>
+                        <a href="#" class="product__id">Ver producto</a>
+
+                    </div>
+                    <div class="product last">
+                        <img src="assets/img/prod5.png" alt="product image" class="product__img">
+                        <h2 class="product__name">Green Head</h2>
+                        <p class="product__price">$ 60.00</p>
+                        <a href="#" class="product__id">Ver producto</a>
+
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="footer__form__section">
             <div class="footer__container__form">
@@ -96,6 +128,8 @@
             <a href="https://www.facebook.com/cristian.r.perez3/" target="_blank" class="social__links"><img src="assets/img/facebook_icon.png" alt="" class="social_img"></a>
         </div>
     </footer>
-    <script src="js/login.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/searchProducts.js"></script>
+    <script src="./js/seeproducts.js" type="module"></script>
 </body>
 </html>

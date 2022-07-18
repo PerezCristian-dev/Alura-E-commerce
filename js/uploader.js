@@ -37,6 +37,32 @@ export function createUpload(title, message, boton1){
  let uploaderIcon = document.querySelector(".uploader__icon");
  uploaderIcon.addEventListener("click",()=> {
     uploadFiles();
+    const file = document.querySelector(".uploadChooser");
+
+    file.onchange = ({target}) =>{
+       let thefile = target.files[0];
+       if(thefile){
+        let fileName  = thefile.name;
+   
+        let theAlert = document.querySelector(".upload__alert");
+        let theImage = document.createElement('div');
+        theImage.classList.add("theuploaded__file")
+        let theImageComponents = `<img class="theuploaded__img" src="assets/img/IMG.png">
+        <p class="fileUpload">${fileName}</p>`
+        theImage.innerHTML = theImageComponents;
+        theAlert.appendChild(theImage);
+
+        const uploadBtn = document.querySelector(".btn1");
+        uploadBtn.addEventListener("click", ()=>{
+            alert("This feature is not yet available, please copy the link of your web image and paste it on the url input section");
+            closeUploader();
+        });
+       }
+    }
+
+
+
+
     let closer = document.querySelector (".closeIcon");
     closer.addEventListener ("click",closeUploader);
 });
@@ -47,5 +73,10 @@ let closeUploader =  ()=>{
     window.onscroll = function() {
     };
 };
+
+
+
+
+
 
 

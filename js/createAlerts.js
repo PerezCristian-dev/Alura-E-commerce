@@ -18,9 +18,8 @@ export function createAlert(title, message, type, boton1, boton2){
     alerta.setAttribute ('id','alerta');
     alerta.classList.add("alerta");
     alerta.innerHTML = alertComponents;
-    
     return alerta;
- };
+};
 
 
 

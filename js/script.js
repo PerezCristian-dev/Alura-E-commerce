@@ -68,7 +68,7 @@ const productContainer = document.querySelector(".product__section");
 
 //Searching through keys on session storage to get the product category
 Keys.forEach(key => {
-    if (key == "IsThisFirstTime_Log_From_LiveServer" || key == "login") {
+    if (key == "IsThisFirstTime_Log_From_LiveServer" || key == "login" || key == "seeProduct") {
 
     } else {
         //Creating new category and adding products to it

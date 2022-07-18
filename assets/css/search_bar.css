@@ -1,0 +1,111 @@
+.found__products{
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    height: 18rem;
+    width: 100vw;
+    background: white;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    transition: 1s ease-in-out;
+    animation: bar .7s;
+}
+
+.searchproduct__container{
+    display: flex;
+    justify-content: space-around;
+    border-top:#2A7AE4 solid 1px ;
+    height: 100%;
+    box-shadow: 25px 15px 20px rgba(black, black, black, 0.5);
+}
+.searched__product{
+
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    transition: 1s ease-in-out;
+    animation: load 1s;
+    
+}
+
+.seachproduct__img{
+    width: 100%;
+    height: 65%;
+    border-radius: 10px;
+}
+
+
+@keyframes load {
+    0%{
+        transform : translateX(500%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes bar {
+    0%{
+        transform : translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (max-width:1300px){
+
+
+    .search__bar:focus{
+        position: relative;
+        z-index: 9999;
+        width: 50vw;
+        top: 380px;
+        left: 0rem;
+        background-color: black;
+        color: white;
+        padding: .2rem 1rem;
+        margin-top: 0;
+        background-image: none;
+    }
+
+    .searchproduct__container{
+        display: flex;
+        justify-content: space-around;
+        border-top:#2A7AE4 solid 1px ;
+        margin-top: 0;
+        height: 28vh;
+       
+        box-shadow: 25px 15px 20px rgba(black, black, black, 0.5);
+    }
+
+}
+
+@media only screen and (max-width: 780px){
+    
+    .search__bar:focus{
+        position: absolute;
+        z-index: 9999;
+        width: 82%;
+        top: 325px;
+        left: 0;
+        background-color: black;
+        color: white;
+        padding: .2rem 1rem;
+        margin-top: 0;
+        background-image: none;
+    }
+
+    .searchproduct__container{
+        display: flex;
+        justify-content: space-around;
+        border-top:#2A7AE4 solid 1px ;
+        margin-top: 0;
+        height: 28vh;
+       
+        box-shadow: 25px 15px 20px rgba(black, black, black, 0.5);
+    }
+}

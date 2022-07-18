@@ -124,6 +124,27 @@
     text-align: center;
 }
 
+.registro__question{
+    text-align: center;
+    padding: 1rem;
+}
+
+.registro__link{
+    color: #2A7AE4;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.registro__info{
+    font-size: .9rem;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.2;
+}
+.registro__info2{
+    text-align: center;
+    padding: 1rem;
+}
 @media only screen and (max-width:1000px){
 
     .product__section{

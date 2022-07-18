@@ -29,12 +29,12 @@ registrar.addEventListener("click",(event)=>{
     let pass = document.querySelector("[data-userpasswordprovided]").value;
     let theuser = email;
     let thepassword = pass;
-    console.log(theuser);
+   
 
     if(theuser == "" || thepassword == ""){
         const messageSpan = document.querySelectorAll (".input-message-error");
         messageSpan.forEach (span =>{
-            console.log(span.parentNode.children[1]);
+           
             span.classList.remove ("theSpanMessage");
             if(span.parentNode.children[1].value == ""){
                 span.classList.add ("theSpanMessage");
@@ -90,7 +90,7 @@ function newuser (){
 
 const theInputs = document.querySelectorAll('.input');
 
-console.log(theInputs);
+
 theInputs.forEach (input =>{
     const inputLabel = input.parentNode.children[0];
    

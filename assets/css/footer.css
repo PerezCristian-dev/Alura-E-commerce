@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 .social_img{
     height: 30px;
@@ -89,15 +89,16 @@
 }
 @media only screen and (max-width:1000px){
     .footer__form__section{
-
-        padding: 1rem 1rem;
-        justify-content: space-around;
+    
+        padding: 1rem 0rem;
+        justify-content: space-between;
  
     }
 
     .footer__container__form{
         flex-direction: column;
-        width: 30%;
+        width: 40%;
+        padding: 0rem 2rem;
     }
     .footer__form__links li{
         line-height: 45px;
@@ -113,11 +114,6 @@
         padding: .8rem 1.5rem;
     }
 
-    .footer__formulario{
-        line-height: 40px;
-        width: 50%;
-    
-    }
 
     .footer__input{
      
@@ -127,6 +123,10 @@
 
     }
     
+    .footer__input-container{
+        width: 90%;
+    }
+
     #message{
         height: 3rem;
     }
@@ -137,7 +137,17 @@
         padding:  0 .5rem;
  
     }
+    .login_field{
+        width: 100%;
+    }
+    .login__section{
+        padding: 2rem;
+    }
     
+    .footer__formulario{
+        width: 60%;
+       
+    }
 }
  
 @media only screen and (max-width: 780px){
@@ -171,5 +181,10 @@
         padding: 1rem;
         justify-self: center;
     
+    }
+
+        
+    .footer__input-container{
+        width: 100%;
     }
 }

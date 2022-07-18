@@ -91,10 +91,10 @@
 }
 .uploader__icon {
     background: url(../../img/uploadFile.png);
-    background-size: 50%;
+    background-size: 100rem;
     background-position: center;
     background-repeat: no-repeat;
-    width: 20%;
+    width: 20rem;
 }
 .input-label{
     display: none;
@@ -146,6 +146,11 @@
 .button__login{
     border-radius: 40px;
     font-weight: 600;
+    color:white;
+    background: #2A7AE4;
+    padding: 1rem;
+    border: none;
+    width: 100%;
 }
 .theSpanMessage{
     display: unset;
@@ -218,7 +223,6 @@
     .button__login{
         width: 100%;
     }
-
 
 
 }
