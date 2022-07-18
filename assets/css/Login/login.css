@@ -35,6 +35,7 @@
 .input:focus{
     outline: 2;
     outline-color: #2A7AE4;
+    height: 15px;
     transition: .1s ease-in-out;
 }
 
