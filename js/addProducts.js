@@ -49,7 +49,7 @@ class product {
     
 //Getting the key of each saved password. 
     keys.forEach (key =>{
-        if (key == "IsThisFirstTime_Log_From_LiveServer" || key == "login"){
+        if (key == "IsThisFirstTime_Log_From_LiveServer" || key == "login" || key == "seeProduct"){
 
         }else{
             const productsOnMemory = JSON.parse(sessionStorage.getItem(key))||[];
