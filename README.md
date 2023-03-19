@@ -1,4 +1,4 @@
-Alura Geek E-commerce Project
+# Alura Geek E-commerce Project
 The Alura Geek E-commerce project is a web application that allows users to browse and purchase products online. It was developed using HTML, JavaScript, and CSS.
 
 Features
