@@ -21,4 +21,4 @@ Once you have the project running, you can use the navigation menu to browse the
 If you are an admin user, you can access the admin panel to manage products, orders, and user accounts.
 
 Credits
-This project was developed by [Your Name] as part of the Alura Geek course. Special thanks to the instructors and course materials for providing the guidance and resources necessary to complete this project.
+This project was developed by Cristian Perez as part of the Alura course. Special thanks to the instructors and course materials for providing the guidance and resources necessary to complete this project.
